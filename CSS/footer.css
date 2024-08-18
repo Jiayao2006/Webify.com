@@ -1,0 +1,100 @@
+footer{
+    margin-bottom: 0;
+}
+
+footer div.footer-wrap{
+    background-color: rgba(128, 128, 128, 0.329);
+}
+
+footer .footer-wrap .footer-row{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 100px;
+    transition: 0.5s;
+}
+
+footer div.footer-wrap div.footer-row div.footer-col ul{
+    list-style: none;
+}
+
+footer div.footer-wrap div.footer-row div.footer-col h4{
+    color: #171717;
+    margin-bottom: 25px;
+    font-size: 20px;
+    position: relative;
+}
+
+footer div.footer-wrap div.footer-row div.footer-col h4::before{
+    content: '';
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(207, 114, 7, 0.692);
+    bottom: -4px;
+}
+
+.footer-col ul li {
+    padding: 10px 0;
+}
+
+.footer-col ul li a{
+    color: #171717;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+
+.footer-col form input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+    border-radius: 20px;
+}
+
+.footer-col form input.inputSubmit{
+    background-color: rgba(207, 114, 7, 0.692);
+    color: #171717;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.footer-col p {
+    color: #171717;
+}
+
+hr{
+    opacity: 0.7;
+}
+
+.socialIcons i{
+    display: inline-block;
+    color: #171717;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: 0.5s;
+}
+
+@media (max-width: 800px){
+    footer div.footer-wrap div.footer-row{
+        flex-direction: column;
+        padding: 20px 30px;
+        transition: 0.5s;
+    }
+
+    div.footer-col ul{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    div.footer-col form input{
+        width: 100%;
+    }
+}

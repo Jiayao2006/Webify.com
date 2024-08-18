@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/navbar.css"> <!--navbar -->
+    <link rel="stylesheet" href="../CSS/modes.css"> <!--light/dark mode-->
+    <title>Webify.com | About Us</title>
+    <link rel="icon" href="../Media/W__1_-removebg-preview.png" type="image/icon type"> <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--font awesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="../CSS/footer.css"> <!--footer-->
+    <style>
+        .accordion {
+            background-color: #eee;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            border-radius: 20px;
+            margin: 10px 0
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #838383;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: rgb(199, 197, 197);
+            overflow: hidden;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo" target="_blank">Webify<span class="spotlight-h1">.com</span></a>
+        <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="nav_element" target="_blank">Overview</a>
+            <a href="services.html" class="nav_element" target="_blank">Services</a>
+            <a href="pricing.html" class="nav_element" target="_blank">Pricing</a>
+            <a href="aboutUs.html" class="nav_element" target="_blank">About Webify</a>
+        </nav>
+        <div class="burger" id="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions.</h2>
+
+        <button class="accordion">What is Webify.com?</button>
+        <div class="panel">
+            <p>Webify is a company with a team that helps startups and existing businesses to
+                build affordable websites and 
+                provide coding courses to help individuals upgrade their skills or 
+                learn new ones.</p>
+        </div>
+
+        <button class="accordion">How can I make an appointment?</button>
+        <div class="panel">
+            <p>You can contact us <a href="aboutUs.html#feedback">by filling up the form.</a>. 
+                <br><br>Our office hours are: <br> <br> Monday - Friday: 9am to 8pm 
+                <br>Saturday and Sunday: 10am - 8pm 
+                <br>Public Holidays Closed</p>
+        </div>
+
+        <button class="accordion">What is your operating hours?</button>
+        <div class="panel">
+            <p>Monday - Friday: 9am to 8pm 
+                <br>Saturday and Sunday: 10am - 8pm 
+                <br>Public Holidays Closed</p></p>
+        </div>
+        <button class="accordion">What websites do you build?</button>
+        <div class="panel">
+            <p>We build a variety of websites including e-commerce sites, informational sites, and portfolios. 
+                Let us know your needs, and we can tailor a solution for you.</p>
+        </div>
+        <button class="accordion">How long does it take to build a website?</button>
+        <div class="panel">
+            <p>The timeline for building a website can vary based on its complexity. On average, 
+                it takes 2 to 3 months from start to finish. 
+                We'll provide a more accurate estimate after discussing your project.</p>
+        </div>
+        <button class="accordion">Are the coding courses online or in person?</button>
+        <div class="panel">
+            <p>Our courses are available online, allowing you to learn at your own pace from anywhere. 
+                Limited-time workshops may be available in-person.</p>
+        </div>
+        <button class="accordion">What payment methods do you accept?</button>
+        <div class="panel">
+            <p> Visa, Mastercard, American Express, and Paypal. <br> <br>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+            </p>
+        </div>
+        <button class="accordion">What should I do if I experience issues with my website?</button>
+        <div class="panel">
+            <p>Contact our team by filling up the <a href="aboutUs.html#feedback">form</a> with details about the issue, and we'll assist you as quickly as possible.</p>
+        </div>
+        <button class="accordion">How can I update or make changes to my website after it's live?</button>
+        <div class="panel">
+            <p>You can request updates by contacting us <a href="aboutUs.html#feedback">here</a>. 
+                We provide monthly maintenance for websites done by us.</p>
+        </div>
+        <button class="accordion">Do you offer any discounts or promotions?</button>
+        <div class="panel">
+            <p>We occasionally offer discounts and promotions. Check our website or subscribe to our newsletter for the latest offers.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Webify<span class="spotlight-h1">.com</span></h4>
+                    <ul>
+                        <li><a href="index.html" target="_blank">Overview</a></li>
+                        <li><a href="services.html" target="_blank">Our Services</a></li>
+                        <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                        <li><a href="index.html" target="_blank">About Webify<span class="spotlight-h1">.com</span></a></li>
+                    </ul>
+                </div>
+
+                <!--Second column-->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Others</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="privacyPolicy.html" target="_blank">Privacy Policy</a></li>
+                        <li><a href="services.html#edu" target="_blank">Education</a></li>
+                        <li><a href="hiring.html" target="_blank">Join Us</a></li>
+                    </ul>
+                </div>
+
+                <!--Third column-->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <form id="newsletterForm">
+                        <input type="text" placeholder="Your Name" class="inputName" name="user-name" required>
+                        <input type="email" placeholder="Enter Company Email" class="inputEmail" name="user-email" required>
+                        <input type="submit" value="Submit" class="inputSubmit">
+                    </form>
+                    <div id="thankYouMessage" style="display: none; margin-top: 20px;">
+                        <h4 class="footer-heading">Thank you for subscribing!</h4>
+                        <p id="userName"></p>
+                        <p id="userEmail"></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <p class="copyright">&#169; 2024 Webify.com. All Rights Reserved.</p>
+                </div>
+                <div class="socialIcons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:jiayaotan_dbft@outlook.com"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/newsletter_validation.js"></script> <!--newsletter validation-->
+    <script src="../JS/script.js"></script> <!--hamburger js-->
+    <script src="../JS/faqMode.js" defer></script> <!--light/dark mode js-->
+    <script src="../JS/snackbar.js"></script> <!--snackbar js-->
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+
+</html>

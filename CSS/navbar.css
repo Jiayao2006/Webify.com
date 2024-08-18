@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    /*border: 1px*/
+    background-color: #FAF9F6;
+    /* overflow-x: hidden; */
+    color: #171717;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;   
+    transition: all .5s ease;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.226);
+}
+
+.logo{
+    font-size: 27px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #171717;
+    margin-right: auto;
+}
+
+
+header nav.navbar a{
+    position: relative;    /*To make the line*/
+    font-weight: 500;
+    color: #171717;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 40px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+@media (max-width: 850px){
+    body{
+        overflow-x: hidden;
+    }
+
+    nav.navbar{
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        transition: all .5s ease;
+        background-color: rgb(128, 128, 128);
+        /* background-color: rgb(196, 195, 195); */
+    }
+
+    header nav.navbar a{
+        margin-left: 0px;
+        margin-left: 0px;
+        padding: 22px;
+        width: 100%;
+        text-align: center; /* Center the text */
+        /* background-color: ; */
+        box-sizing: border-box;
+        transition: all .5s ease;
+    }
+    header nav.navbar a.nav_element::before{
+        display: none;
+    }
+    header nav.navbar a.nav_element:hover{
+        background-color: rgb(223, 223, 223);
+    }
+}
+.navbar a::before{
+    content: "";  /*to make the content there*/
+    position: absolute;
+    top: 100%; /*to put it at the bottom of the anchor element*/
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #171717;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+/*burger icon*/
+div.burger{
+    cursor: pointer;
+    display: none;
+}
+
+div.burger div {
+    background-color: #171717;
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+}
+
+@media (max-width: 850px) {
+    /* .navbar a {
+        display: inline-block;
+        margin: 0px 0px; Margin to space out items in the column
+        margin-left: 0px;
+        padding: 22px;
+        width: 100%;
+        text-align: center; Center the text
+        background-color: aqua;
+        box-sizing: border-box;
+    }  */
+    header {
+        padding: 10px;
+        transition: all .5s ease;
+    }
+
+    div.burger{
+        display: block;
+    }
+    nav.navbar.active {
+        right: 0;
+    }
+}
+

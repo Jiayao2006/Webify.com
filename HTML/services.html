@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/navbar.css"> <!--navbar -->
+    <link rel="stylesheet" href="../CSS/modes.css"> <!--light/dark mode-->
+    <title>Webify.com | Services</title>
+    <link rel="icon" href="../Media/W__1_-removebg-preview.png" type="image/icon type"> <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--font awesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="../CSS/footer.css"> <!--footer-->
+    <link rel="stylesheet" href="../CSS/serviceStyle.css"> <!--service page-->
+    <link rel="stylesheet" href="../CSS/timeline.css"> <!--timeline-->
+</head>
+
+<body>
+    <header class="card">
+        <a href="index.html" target="_blank" class="logo">Webify<span class="spotlight-h1">.com</span></a>
+        <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="nav_element" target="_blank">Overview</a>
+            <a href="services.html" class="nav_element" target="_blank">Services</a>
+            <a href="pricing.html" class="nav_element" target="_blank">Pricing</a>
+            <a href="aboutUs.html" class="nav_element" target="_blank">About Webify</a>
+        </nav>
+        <div class="burger" id="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <section class="landing">
+        <video autoplay muted loop id="myvideo">
+            <source src="../Media/18700834-uhd_3840_2160_60fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content-wrap">
+            <h1 class="content-heading">Webify<span class="spotlight-h1">.com</span></h1>
+        </div>
+    </section>
+
+    <section class="information-wrap">
+        <div class="information">
+            <h1 class="title">Your Website, Your Story—Perfectly Told.</h1>
+            <p>Every startup has its unique vision and path to success.
+                Our web services and coding courses are designed to empower innovators of all kinds,
+                providing the tools and expertise needed to turn ideas into reality.
+                Let's unlock your potential and drive your startup forward.</p>
+        </div>
+        <div class="card">
+            <img src="../Media/study.jpg" alt="Service" class="card-img">
+            <div class="spotlight">
+                <h1>
+                    Education
+                </h1>
+                In addition to our core services, we offer educational courses and lessons on web development and basic Python programming. 
+                Our courses provide valuable insights and hands-on experience to support personal and professional growth.
+                <br><br>
+                <a href="#edu" class="button">View More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Media/meeting.jpg" alt="Service" class="card-img">
+            <div class="spotlight">
+                <h1>
+                    Create Your Website
+                </h1>
+                At Webify, we specialize in providing a full range of website services
+                tailored to meet the unique needs of growing startups.
+                Our services are designed to help you establish a strong online presence,
+                attract your target audience, and achieve your business goals.
+                <br><br>
+                <a href="#appointment" class="button">View More</a>
+            </div>
+        </div>
+    </section>
+
+    <a id="edu">
+        <section class="education">
+            <div class="education-heading">
+                <h1 class="title">Education</h1>
+                <p>Web Development Courses:</p>
+            </div>
+            <section class="explore">
+                <div class="card2">
+                    <img src="../Media/webdev.jpg" alt="Service" class="card2-img">
+                    <div class="spotlight2">
+                        <h1>
+                            Web Development
+                        </h1>
+                        <span style="color: red;">Application Closed</span> <br><br>
+                        Learn the basics of web development and start building your own websites.
+                        <br> <br>The languages you will learn are HTML, CSS, and JavaScript.
+                        This is a pre-requisite for <strong>Advanced Web Development</strong>.
+                        <br>
+                        <a class="button" onclick="myFunction4()">Application Closed</a>
+                        <div id="snackbar4">Application is closed.</div>
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="../Media/advanced.jpg" alt="Image of a crefit card" class="card2-img">
+                    <div class="spotlight2">
+                        <h1>
+                            Advanced Web Development
+                        </h1>
+                        Application Deadline <span id="deadline" style="color: red;"></span> <br><br>
+                        Advanced web development involves creating complex and dynamic websites or web applications.
+                        <br><br>
+                        You will learn more about server-side languages like PHP, Python, and Ruby.
+                        <br><br>
+                        <a href="https://forms.gle/mpxCNwbdrJDv3ZyNA" target="_blank" class="button">Sign Up Now</a>
+                    </div>
+                </div>
+                <div class="education-heading">
+                    <p>Data Management Courses:</p>
+                </div>
+                <div class="card2">
+                    <img src="../Media/python.png" alt="" class="card2-img">
+                    <div class="spotlight2">
+                        <h1>
+                            Programming Basics
+                        </h1>
+                        Application Deadline <span id="deadline3" style="color: red;"></span> <br><br>
+                        <p class="deadline2"></p>
+                        This course equips you with the basic programming skills needed to start your journey.
+                        <br><br>
+                        You will learn how to solve real world problems using Python. Python is a versatile language
+                        that is easy to learn and use.
+
+                        This is a pre-requisite to <strong>Data Management and Visualization</strong>.
+                        <br><br>
+                        <a href="https://forms.gle/mpxCNwbdrJDv3ZyNA" target="_blank" class="button">Sign Up Now</a>
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="../Media/dataviz.jpg" alt="" class="card2-img">
+                    <div class="spotlight2">
+                        <h1>
+                            Data Management and Visualization
+                        </h1>
+                        <span style="color: red;">Application Closed</span> <br><br>
+                        <p class="deadline2"></p>
+                        Many businesses rely on data to make informed decisions.
+                        <br><br>This course equips you with the skills needed to clean datasets, and derive meaningful
+                        information from raw datasets.
+                        Tools taught will be Tableau and PowerBI.
+                        You will also learn Database Management Systems like SQL.
+                        <br><br>
+                        <a class="button" onclick="myFunction3()">Application Closed</a>
+                        <div id="snackbar3">Application is closed.</div>
+                    </div>
+                </div>
+                <div class="education-heading">
+                    <p>New Courses:</p>
+                </div>
+                <div class="card2">
+                    <img src="../Media/gamedev.jpg" alt="" class="card2-img">
+                    <div class="spotlight2">
+                        <h1>
+                            Game Development
+                        </h1>
+                        Application Opens in <span id="deadline2" style="color: red;"></span> <br><br>
+                        You will learn how to create games using Unity and C#.
+                        <br><br>
+                        Many popular games like Among Us, Fall Guys, and Hollow Knight were created using Unity.
+                        <br><br>
+                        <a class="button" onclick="myFunction()">Application Not Open</a>
+                        <div id="snackbar1">Application is not open yet.</div>
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="../Media/cloud.jpg" alt="" class="card2-img">
+                    <div class="spotlight2">
+                        <h1>
+                            Basic of Cloud Computing
+                        </h1>
+                        <span style="color: red;">TBC</span> <br><br>
+                        Imagine having access to your files and applications from anywhere in the world. You do not have
+                        to own a physical server to store your data. This is the power of cloud computing.
+                        <br><br>This course will teach you the basics of cloud computing and how to use cloud services
+                        like AWS, Azure, and Google Cloud.
+                        <br><br>
+                        <a class="button" onclick="myFunction2()">Application Not Open</a>
+                        <div id="snackbar2">Application is not open yet.</div>
+                    </div>
+                </div>
+                <br><br>
+            </section>
+        </section>
+    </a>
+    <a id="appointment">
+        <section class="appointment">
+            <h1>Make An Appointment With Us.</h1>
+            <a href="https://forms.gle/mpxCNwbdrJDv3ZyNA" target="_blank">Apply here</a>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>We respond and schedule a meeting within 4 working days.</h3> <br>Click on the link above to apply.
+                </div>
+                <a href="FAQ.html" target="_blank">
+                    <div class="grid-item">
+                        <h3>Frequently Asked Questions</h3>
+                    </div>
+                </a>
+                <div class="grid-item">
+                    <h3>Service Hours</h3><br>Monday - Friday: 9am to 8pm <br> Saturday and Sunday: 10am - 8pm
+                    <br>Public Holidays Closed
+                </div>
+            </div>
+
+            <div class="timeline-wrap">
+                <div class="timeline-heading">
+                    <h1>Stages</h1>
+                    <p>We undergo each of these steps that plays a crucial role in the overall success of your website,
+                        ensuring that the final product meets the goals, functions correctly,
+                        and provides a positive user experience.</p>
+                </div>
+                <div class="timeline">
+                    <div class="container left">
+                        <div class="content">
+                            <h2>Planning</h2>
+                            <p>We gather information and purpose of your website/business and outline the structure.</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>Design</h2>
+                            <p>Create basic wireframes to define the layout and basic style of each page.</p>
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                            <h2>Development</h2>
+                            <p>Begin developing the front-end and back-end of your website.</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>Testing</h2>
+                            <p>Make further testings and verify that all functions work and behave as expected.</p>
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                            <h2>Deployment</h2>
+                            <p>Publish your website online.</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>Maintenance</h2>
+                            <p>Perform regular checks on the website for performance issues, errors or security threats.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                            <h2>Feedback and Improvement</h2>
+                            <p>Gather your feedback and seek areas of improvement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </a>
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Webify<span class="spotlight-h1">.com</span></h4>
+                    <ul>
+                        <li><a href="index.html" target="_blank">Overview</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                        <li><a href="aboutUs.html" target="_blank">About Webify<span class="spotlight-h1">.com</span></a></li>
+                    </ul>
+                </div>
+
+                <!--Second column-->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Others</h4>
+                    <ul>
+                        <li><a href="FAQ.html" target="_blank">FAQ</a></li>
+                        <li><a href="privacyPolicy.html" target="_blank">Privacy Policy</a></li>
+                        <li><a href="services.html#edu" target="_blank">Education</a></li>
+                        <li><a href="hiring.html" target="_blank">Join Us</a></li>
+                    </ul>
+                </div>
+
+                <!--Third column-->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <form id="newsletterForm">
+                        <input type="text" placeholder="Your Name" class="inputName" name="user-name" required>
+                        <input type="email" placeholder="Enter Company Email" class="inputEmail" name="user-email" required>
+                        <input type="submit" value="Submit" class="inputSubmit">
+                    </form>
+                    <div id="thankYouMessage" style="display: none; margin-top: 20px;">
+                        <h4 class="footer-heading">Thank you for subscribing!</h4>
+                        <p id="userName"></p>
+                        <p id="userEmail"></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <p class="copyright">&#169; 2024 Webify.com. All Rights Reserved.</p>
+                </div>
+                <div class="socialIcons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:jiayaotan_dbft@outlook.com"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/newsletter_validation.js"></script> <!--newsletter validation-->
+    <script src="../JS/script.js"></script> <!--hamburger js-->
+    <script src="../JS/serviceMode.js" defer></script> <!--light/dark mode js-->
+    <script src="../JS/snackbar.js"></script> <!--snackbar js-->
+    <script src="../JS/deadline.js"></script> <!--deadline js-->
+</body>
+
+</html>

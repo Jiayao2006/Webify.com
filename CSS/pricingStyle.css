@@ -1,0 +1,121 @@
+section{
+    min-height: 100vh;
+}
+
+.landing-inner h1.landing-heading{
+    letter-spacing: -2px;
+    font-size: 50px;
+}
+
+.landing-inner p.landing-subheading{
+    font-size: 18px;
+}
+
+section.landing{
+    top: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+div.landing-image-inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+div.landing-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+section.pricing-download{
+    width: 100%;
+    height: 100%;
+}
+
+/* Added: Ensure the iframe container is flexible */
+div.iframe {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Adjusted */
+    max-width: 800px; /* Keep the maximum width */
+    padding: 0 15px; /* Added for small screens */
+    box-sizing: border-box; /* Added to include padding in width calculation */
+}
+
+/* Updated: Ensure the iframe scales properly */
+.embed {
+    border: none;
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+}
+
+/* Optional: Add media query for smaller screens */
+@media (max-width: 768px) {
+    div.pricing-download-inner {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 30px; /* Adjust top margin for smaller screens */
+    }
+
+    div.landing-inner h1.landing-heading {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    div.landing-inner p.landing-subheading {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+div.pricing-download-inner{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 50%;
+    text-align: center;
+}
+
+div.pricing-download-inner h1{
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+
+div.pricing-download-inner p{
+    font-size: 18px;
+    margin-top: 17px;
+    margin-bottom: 35px;
+}
+
+/* Updated: Make the download button responsive */
+a.pricing-download-button {
+    display: inline-block; /* Ensure it's inline-block for proper sizing */
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: rgb(230, 230, 230);
+    color: #171717;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    width: 100%; /* Adjust width to fit its container */
+    max-width: 300px; /* Limit maximum width for larger screens */
+}
+
+a.pricing-download-button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+/* Optional: Add media query for smaller screens */
+@media (max-width: 768px) {
+    a.pricing-download-button {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 12px 25px; /* Adjust padding for smaller screens */
+    }
+}
